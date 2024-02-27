@@ -48,6 +48,9 @@ class TV:
     def turnOff(self):
         self.__estado = False
 
+    def getEstado(self):
+        return self.__estado
+
     def canalUp(self):
         if self.__estado and self.__canal < 120:
             self.__canal += 1
